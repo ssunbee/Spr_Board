@@ -26,14 +26,14 @@ public class BoardServiceImpl  implements BoardService{
 	}
 
 	
-	//ë‹¨ì¼ ì´ë¯¸ì§€ ì¶”ê°€í•˜ê¸°
+	//´ÜÀÏ ÀÌ¹ÌÁö Ãß°¡ÇÏ±â
 	@Override
 	public int addNewArticle(Map articleMap) throws Exception{
 		return boardDAO.insertNewArticle(articleMap);
 	}
 	
-	 //ë‹¤ì¤‘ ì´ë¯¸ì§€ ì¶”ê°€í•˜ê¸°
-/*
+	 //´ÙÁß ÀÌ¹ÌÁö Ãß°¡ÇÏ±â
+	/*
 	@Override
 	public int addNewArticle(Map articleMap) throws Exception{
 		int articleNO = boardDAO.insertNewArticle(articleMap);
@@ -41,9 +41,9 @@ public class BoardServiceImpl  implements BoardService{
 		boardDAO.insertNewImage(articleMap);
 		return articleNO;
 	}
-*/
+	*/
 	/*
-	//ë‹¤ì¤‘ íŒŒì¼ ë³´ì´ê¸°
+	//´ÙÁß ÆÄÀÏ º¸ÀÌ±â
 	@Override
 	public Map viewArticle(int articleNO) throws Exception {
 		Map articleMap = new HashMap();
@@ -53,11 +53,10 @@ public class BoardServiceImpl  implements BoardService{
 		articleMap.put("imageFileList", imageFileList);
 		return articleMap;
 	}
-	*/
-
+   */
 	
 	
-	 //ë‹¨ì¼ íŒŒì¼ ë³´ì´ê¸°
+	 //´ÜÀÏ ÆÄÀÏ º¸ÀÌ±â
 	@Override
 	public ArticleVO viewArticle(int articleNO) throws Exception {
 		ArticleVO articleVO = boardDAO.selectArticle(articleNO);

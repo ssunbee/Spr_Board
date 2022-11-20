@@ -6,8 +6,8 @@
 <c:set var="contextPath"  value="${pageContext.request.contextPath}"  /> 
 <%
   request.setCharacterEncoding("UTF-8");
-%> 
-
+%>
+<html>
 <head>
 <meta charset="UTF-8">
 <title>글쓰기창</title>
@@ -38,7 +38,7 @@
   <style>
         input{border:none;}
         table{border-collapse: collapse;}
-        tr ,td{border: 1px solid;}
+        tr ,td{border: 1px solid; vertical-align: middle;}
         textarea:focus { outline:none; }
         input:focus { outline:none; }
         textarea{ resize: none; border: none;}
@@ -51,7 +51,7 @@
          <form name="articleForm" method="post"
              action="${contextPath}/board/addNewArticle.do"
              enctype="multipart/form-data">
-             <table >
+             <table>
                  <tr>
                      <td style="background-color: #CDF0EA" >작성자</td>
                      <td td colspan="2"><input type="text" size="20"
@@ -72,13 +72,13 @@
                      <td><input type="file" name="imageFileName"
                          onchange="readURL(this);" />
                      <td><img id="preview" src="#" width=200 height=200 /></td>
-     
                  </tr>
-               
              </table> 
              <div style="width: 100%;  text-align:center; margin-top: 40px;">
-             <input type="submit" value="글쓰기"  style="width:100px; height:30px;  cursor: pointer; background-color: #ECC5FB "/> 
-                        <input type=button value="목록보기" onClick="backToList(this.form)"  style="width:100px; height:30px;  cursor: pointer; background-color: #ECC5FB; "/></td>
+             <input type="submit" value="글쓰기"  style="width:100px; height:30px;  
+             cursor: pointer; background-color: #ECC5FB "/> 
+             <input type=button value="목록보기" onClick="backToList(this.form)"  
+             style="width:100px; height:30px;  cursor: pointer; background-color: #ECC5FB; "/></td>
               </div>
          </form>
          </div>

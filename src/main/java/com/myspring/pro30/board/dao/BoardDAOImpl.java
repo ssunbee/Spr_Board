@@ -33,7 +33,7 @@ public class BoardDAOImpl implements BoardDAO {
 		return articleNO;
 	}
     
-	//´ÙÁß ÆÄÀÏ ¾÷·Îµå
+	//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Îµï¿½
 	/*
 	@Override
 	public void insertNewImage(Map articleMap) throws DataAccessException {

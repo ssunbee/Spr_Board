@@ -1,19 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"   isELIgnored="false"
  %>
+ <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>    
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> 
+<c:set var="contextPath"  value="${pageContext.request.contextPath}"  />
+
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
   <title>하단 부분</title>
-  <link href="${contextPath}/resources/css/bottom.css" rel="stylesheet"/> 	
   <style>
 #bottom_wrap {
     clear: both;
     widows: 1920px;
     height: 300px;
-    min-width: 2100px;
     margin-top: 100px;
     background-color:seagreen;
     overflow: hidden;
@@ -24,7 +25,7 @@
     height: 300px;
     margin: 0px auto;
     text-align: center;
-    background: url(../image/bn.png) no-repeat 0 -500px;
+    background: url(${contextPath}/resources/image/bn.png) no-repeat 0 -500px;
 background-size: cover;
     
     
@@ -61,7 +62,7 @@ background-size: cover;
 }
 
 #bottom > address {
-    width: 1400px;
+    width: 1000px;
     height: 200px;
     font-size: 14px;
     font-style: normal;
@@ -77,7 +78,7 @@ background-size: cover;
     width: 150px;
     height: 30px;
     border-radius: 10px;
-    background: url(../image/tel.png)no-repeat 130px 3px;
+    background: url(${contextPath}/resources/image/tel.png)no-repeat 130px 3px;
     background-size: 20px 20px;
     line-height: 40px;
 }

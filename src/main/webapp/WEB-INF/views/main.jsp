@@ -26,7 +26,7 @@
             <div id="btn">
                 <p class="on"><a href="#">우유류</a></p>
                 <p><a href="#">발효유류</a></p>
-                <p><a href="#">유음료류</a></p>
+                <p><a href="#">유음료류</a></p>           
                 <p><a href="#">커피음료</a></p>
                 <p><a href="#">치즈류</a></p>
                 <p><a href="#">디저트류</a></p>
@@ -35,7 +35,7 @@
 
             <div id="tab">
                 <div class="on">
-                    <h3>우유류</h3>
+                    <h3>우유류</h3><hr>
                     <ul>
                         <li class="milk_photo">
                              <img src="${contextPath}/resources/image/menu1.jpg" alt="#" width="264" height="264">
@@ -92,7 +92,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h3>발효유류</h3>
+                    <h3>발효유류</h3><hr>
                     <ul>
                     <li class="milk_photo">
                         <img src="${contextPath}/resources/image/menu16.jpg" alt="#" width="264" height="264">
@@ -154,7 +154,7 @@
                 </div>
 
                 <div>
-                    <h3>유음료류</h3>
+                    <h3>유음료류</h3><hr>
                     <ul>
                         <li class="milk_photo">
                             <img src="${contextPath}/resources/image/menu30.jpg" alt="#" width="264" height="264">
@@ -221,7 +221,7 @@
 
                 </div>
                 <div>
-                    <h3>커피음료</h3>
+                    <h3>커피음료</h3><hr>
                     <ul>
                     <li class="milk_photo">
                         <img src="${contextPath}/resources/image/menu45.jpg" alt="#" width="264" height="264">
@@ -259,7 +259,7 @@
 
                 </div>
                 <div>
-                    <h3>치즈류</h3>
+                    <h3>치즈류</h3><hr>
                     <ul>
                     <li class="milk_photo">
                         <img src="${contextPath}/resources/image/menu53.jpg" alt="#" width="264" height="264">
@@ -322,7 +322,7 @@
                 </div>
                 
                 <div>
-                    <h3>디저트류</h3>
+                    <h3>디저트류</h3><hr>
                     <ul>
                     <li class="milk_photo">
                         <img src="${contextPath}/resources/image/menu67.jpg" alt="#" width="264" height="264">

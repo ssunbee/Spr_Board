@@ -19,13 +19,22 @@
       <result property="email" column="email" />
       <result property="joinDate" column="joinDate" />
    </resultMap> -->
-
-
-	<select id="selectAllMemberList" resultMap="memResult">
+   
+   
+<!-- mysql -->
+ <select id="selectAllMemberList" resultMap="memResult">
       <![CDATA[
          select * from t_member	order by joinDate desc	 	
       ]]>
-	</select>
+</select> 
+
+
+<!-- 오라클
+<select id="selectAllMemberList" resultMap="memResult">
+      <![CDATA[
+         select * from t_member	order by joinDate desc	 	
+      ]]>
+	</select> -->
     
   <insert id="insertMember"  parameterType="memberVO">
 		<![CDATA[

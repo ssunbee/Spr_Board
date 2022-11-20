@@ -30,7 +30,6 @@ public class MemberControllerImpl   implements MemberController {
 	@Autowired
 	MemberVO memberVO ;
 	
-	//pro30/main.do 요청 시 메인 페이지를 보여줌
 	@RequestMapping(value = { "/","/main.do"}, method = RequestMethod.GET)
 	private ModelAndView main(HttpServletRequest request, HttpServletResponse response) {
 		String viewName = (String)request.getAttribute("viewName");
@@ -162,6 +161,12 @@ public class MemberControllerImpl   implements MemberController {
 			viewName = viewName.substring(viewName.lastIndexOf("/", 1), viewName.length());
 		}
 		return viewName;
+	}
+	
+	@RequestMapping("/pro")
+	public String pro(HttpServletRequest request) {
+		System.out.println(request.getContextPath());
+		return null;
 	}
 
 

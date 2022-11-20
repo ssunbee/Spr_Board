@@ -17,13 +17,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class FileDownloadController {
 	private static final String ARTICLE_IMAGE_REPO = "C:\\board\\article_image";
 	@RequestMapping("/download.do")
-	protected void download(@RequestParam("imageFileName") String imageFileName,//이미지 파일 이름을 바로 설정
+	protected void download(@RequestParam("imageFileName") String imageFileName,
 							@RequestParam("articleNO") String articleNO,
 			                 HttpServletResponse response)throws Exception {
 		OutputStream out = response.getOutputStream();
-									//글 번호와 파일 이름으로 다운로드할 파일 경로를 설정
-		String downFile = ARTICLE_IMAGE_REPO + "\\" +articleNO+"\\"+ imageFileName; 
-		
+		String downFile = ARTICLE_IMAGE_REPO + "\\" +articleNO+"\\"+ imageFileName;
 		File file = new File(downFile);
 
 		response.setHeader("Cache-Control", "no-cache");
